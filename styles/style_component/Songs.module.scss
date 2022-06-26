@@ -1,0 +1,10 @@
+.songs--container {
+    display: flex;
+    flex-flow: column;
+    gap: 0.7rem;
+    padding-left: 2rem; /* 32px */
+    padding-right: 2rem;
+    padding-bottom: 7rem;
+    color: $white;
+    padding-top: 1rem;
+}

@@ -1,0 +1,14 @@
+.container {
+  background: $bkg-color;
+  font-family: $rubik;
+  color: $ligherGrey;
+  overflow: hidden;
+  height: 100vh;
+}
+.main--container {
+  display: flex;
+}
+.player--container {
+  position: sticky;
+  bottom: 0;
+}

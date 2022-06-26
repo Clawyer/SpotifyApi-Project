@@ -1,0 +1,68 @@
+.song--container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    color: $ligherGrey;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+    &:hover {
+        background-color: $grey-selected;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+    .song--left {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+    }
+    .song--right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: auto;
+        > p:first-child {
+            width: 10rem;
+            display: none;
+        }
+    }
+    .cover {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .song {
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: $white;
+        }
+        > p:first-child {
+            width: 9rem;
+        }
+        > p:last-child {
+            width: 10rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .song--container {
+    .song--right {
+        margin-left: 0;
+
+        > p:first-child {
+            display: inline;
+        }
+    }
+    }
+}
+
+@media (min-width: 1024px) {
+    .song--container {
+        .song {
+            width: 18rem;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.player {
+   height: 5rem;
+   background: $player-gradient;
+   color: $white;
+   display: grid;
+   grid-template-columns: repeat(3, minmax(0, 1fr));
+   font-size: 0.75rem;
+   gap: 1rem;
+   > div:first-child {
+      display: flex;
+      align-items: center;
+      padding: 0 0.5rem;
+   }
+   .player--center {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+   }
+   .controls {
+      height: 1.25rem;
+      width: 1.25rem;
+      cursor: pointer;
+
+      &:hover {
+         transform: scale(1.25);
+         transition: transform 0.1 ease-out;
+      }
+   }
+   .play {
+      height: 2.5rem;
+      width: 2.5rem;
+   }
+   .player--volume--controls {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.5rem;
+      padding-right: 0.5rem;
+
+      .progress {
+         background: linear-gradient(to right, #82cfd0 0%, #82cfd0 40%, #fff 40%, #fff 100%);
+         border: solid 2px #82cfd0;
+         border-radius: 8px;
+         height: 7px;
+         width: 3.5rem;
+         outline: none;
+         transition: background 450ms ease-in;
+         -webkit-appearance: none;
+      }
+
+      .progress::-webkit-slider-thumb {
+         width: 20px;
+         height: 20px;
+         border-radius: 50%;
+         -webkit-appearance: none;
+         cursor: ew-resize;
+         background: #434343;
+      }
+   }
+}
+
+.player--cover {
+   display: none;
+}
+
+@media screen and (min-width: 768px) {
+   .player {
+      font-size: 1.25rem;
+      .player--volume--controls {
+         padding: 0 1.25rem;
+         .progress {
+            width: 6rem;
+         }
+      }
+   }
+   .player--cover {
+      display: inline;
+      height: 2.5rem;
+      width: 2.5rem;
+   }
+}

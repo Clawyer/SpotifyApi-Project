@@ -1,0 +1,75 @@
+// ============================ COLORS ============================
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// BLACK
+$bkg-color: #181818;
+$dark: #191414;
+$grey-selected: #303030;
+$ligherGrey: #878787;
+$border-color: rgb(17 24 39);
+// WHITE
+$white: #ffffff;
+$light: #b3b3b3;
+
+// COLORS
+$blue: #1aaddc;
+$darkerBlue: #3491ae;
+
+$red: #ff0000;
+$darkerRed: #a90000;
+
+$yellow: #ffcd38;
+$orange: #ff5b00;
+$green: #3ec70b;
+
+// ============================ GRADIENTS ============================
+$black-gradient: linear-gradient(
+    180deg,
+    #222 0%,
+    #1f1f1f 11.64%,
+    #171717 25.66%,
+    #161616 32.94%,
+    #151515 35.98%,
+    #121212 50.34%,
+    rgba(18, 18, 18, 0) 85%,
+    #1aaddc 100%
+);
+$player-gradient: linear-gradient(
+    0deg,
+    rgba(125, 13, 13, 1) 0%,
+    rgba(90, 17, 17, 1) 17%,
+    rgba(74, 19, 19, 1) 30%,
+    rgba(54, 21, 21, 1) 42%,
+    rgba(37, 23, 23, 1) 65%,
+    rgba(24, 24, 24, 1) 98%
+);
+$blue-gradient: linear-gradient(180deg, #1aaddc, #22a4d0, #2d8fb3, #33728d, #325465, #2c3b42, #25292b, #222222);
+
+$heart-gradient: linear-gradient(
+    135deg,
+    #1aaddc 0%,
+    #c2313b 0.01%,
+    #f10e0e 33.33%,
+    #b33c4a 52.08%,
+    #b53b48 70.31%,
+    #796781 81.77%,
+    #5383a5 89.06%,
+    #1aaddc 100%
+);
+
+$gradient1: linear-gradient(180deg, #1aaddc, #22a4d0, #2d8fb3, #33728d, #325465, #2c3b42, #25292b, #222222);
+$gradient2: linear-gradient(180deg, hsla(9, 58%, 47%, 1) 0%, hsla(0, 0%, 13%, 1) 100%);
+$gradient3: linear-gradient(180deg, hsla(9, 100%, 50%, 1) 0%, hsla(0, 0%, 13%, 1) 100%);
+$gradient4: linear-gradient(180deg, hsla(21, 100%, 50%, 1) 0%, hsla(0, 0%, 13%, 1) 100%);
+$gradient5: linear-gradient(180deg, hsla(334, 95%, 51%, 1) 0%, hsla(328, 100%, 9%, 1) 100%);
+$gradient5: linear-gradient(180deg, hsla(281, 96%, 51%, 1) 0%, hsla(328, 100%, 9%, 1) 100%);
+$gradient6: linear-gradient(180deg, hsla(214, 96%, 51%, 1) 0%, hsla(328, 100%, 9%, 1) 100%);
+$gradient7: linear-gradient(180deg, hsla(193, 96%, 51%, 1) 0%, hsla(328, 100%, 9%, 1) 100%);
+$gradient8: linear-gradient(180deg, hsla(175, 96%, 51%, 1) 0%, hsla(328, 100%, 9%, 1) 100%);
+$gradient9: linear-gradient(180deg, hsla(148, 96%, 51%, 1) 0%, hsla(328, 100%, 9%, 1) 100%);
+$gradient10: linear-gradient(180deg, hsla(102, 96%, 51%, 1) 0%, hsla(328, 100%, 9%, 1) 100%);
+// ============================ FONTS ============================
+$rubik: "Rubik", sans-serif;
+$karla: "Karla", sans-serif;
+
+// ============================ padding ============================

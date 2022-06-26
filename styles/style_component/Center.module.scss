@@ -1,0 +1,106 @@
+.center {
+    flex-grow: 1;
+    height: 100vh;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.header {
+    position: absolute;
+    top: 2.5rem;
+    right: 3rem;
+}
+.profileImage {
+    border-radius: 9999px;
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+}
+.account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: $white;
+    background-color: $dark;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 9999px;
+    padding: 0.3rem;
+    padding-right: 1rem;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.default {
+    background: $blue-gradient;
+}
+.bg1 {
+    background: $gradient1;
+}
+.bg2 {
+    background: $gradient2;
+}
+.bg3 {
+    background: $gradient3;
+}
+.bg4 {
+    background: $gradient4;
+}
+.bg5 {
+    background: $gradient5;
+}
+.bg6 {
+    background: $gradient6;
+}
+.bg7 {
+    background: $gradient7;
+}
+.bg8 {
+    background: $gradient8;
+}
+.bg9 {
+    background: $gradient9;
+}
+.bg10 {
+    background: $gradient10;
+}
+
+.section--container {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    color: $white;
+    height: 25rem;
+    padding: 2rem;
+
+    .playlist--image {
+        height: 11rem;
+        width: 11rem;
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    }
+
+    .playlist--title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 768px) {
+    .playlist--title {
+        font-size: 2rem;
+    }
+}
+@media (min-width: 1280px) {
+    .playlist--title {
+        font-size: 1.25rem;
+    }
+}

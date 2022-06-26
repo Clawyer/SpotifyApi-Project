@@ -1,0 +1,70 @@
+.btn-icon {
+    display: flex;
+    gap: 0.5rem;
+    > svg {
+        width: 1.25em;
+        height: 1.25em;
+    }
+    &:hover {
+        color: $white;
+    }
+    cursor: pointer;
+}
+.sidebar {
+    display: none;
+    flex-flow: column;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    overflow-y: auto;
+    height: 100vh;
+    border-right: 1px solid $border-color;
+    font-size: 0.75rem; /* 12px */
+    line-height: 1rem;
+    padding-bottom: 9rem;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.sidebar--menu {
+    display: flex;
+    flex-flow: column;
+    // gap: 1.25em;
+
+    > * {
+        margin-top: 1rem;
+    }
+}
+.sidebar--separator {
+    background-color: grey;
+    height: 1px;
+}
+
+.playlist {
+    cursor: pointer;
+
+    &:hover {
+        color: $white;
+    }
+}
+@media (min-width: 640px) {
+    .sidebar {
+        max-width: 12rem;
+    }
+}
+@media (min-width: 768px) {
+    .sidebar {
+        display: inline-flex;
+    }
+}
+@media (min-width: 1024px) {
+    .sidebar {
+        max-width: 15rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}
